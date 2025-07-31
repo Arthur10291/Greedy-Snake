@@ -6,13 +6,15 @@
 
 輸入電壓:5V
 VRx及VRy為ADC接腳，可以透過STM32 ADC功能讀取數值。以判斷上下左右。
-![下載](https://github.com/mikey880870/stm32-Greedy-snake--only-registers-/assets/127172104/964ced73-16e8-4005-825b-2e5f071e363e)
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/f2e97745-07eb-44cd-a29b-6d636589e96b" />
+
 
 2.Max7219 8*8 點矩陣
 
 輸入電壓:3~5V
 控制腳位:DIN（數據輸入），CS，和 CLK（時鐘）
-![下載 (1)](https://github.com/mikey880870/stm32-Greedy-snake--only-registers-/assets/127172104/4e72ea5b-124c-439b-b8b4-77c69fb8747f)
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/f633d635-5d8b-4b4e-901a-2a903cde3ed4" />
+
 
 3.UART(FT232):
 
