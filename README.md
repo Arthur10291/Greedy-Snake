@@ -6,15 +6,17 @@
 
 輸入電壓:5V
 VRx及VRy為ADC接腳，可以透過STM32 ADC功能讀取數值。以判斷上下左右。
-<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/f2e97745-07eb-44cd-a29b-6d636589e96b" />
-
+<figure class="third">
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f2e97745-07eb-44cd-a29b-6d636589e96b" />
+</figure>
 
 2.Max7219 8*8 點矩陣
 
 輸入電壓:3~5V
 控制腳位:DIN（數據輸入），CS，和 CLK（時鐘）
-<img width="80" height="80" alt="image" src="https://github.com/user-attachments/assets/f633d635-5d8b-4b4e-901a-2a903cde3ed4" />
-
+<figure class="third">
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f633d635-5d8b-4b4e-901a-2a903cde3ed4" />
+</figure>
 
 3.UART(FT232):
 
@@ -36,23 +38,23 @@ VRx及VRy為ADC接腳，可以透過STM32 ADC功能讀取數值。以判斷上�
 貪食蛇遊戲主要流程：
 
 1.系統初始化：
-初始化硬體設備，包括 Joystick、8x8 點矩陣顯示器（Max7219）和 UART 通訊。
-配置 ADC3 以讀取 Joystick 的 VRx 和 VRy 值，並啟用 DMA 進行數據傳輸。
+初始化硬體設備，包括 Joystick、8x8 點矩陣顯示器（Max7219）和 UART 通訊。  
+配置 ADC3 以讀取 Joystick 的 VRx 和 VRy 值，並啟用 DMA 進行數據傳輸。  
 啟動獨立看門狗（IWDG）以確保系統穩定運行。
 
 2.遊戲開始：
-在點矩陣上顯示初始的貪食蛇和食物位置。
-設置初始遊戲參數，如蛇的長度、方向和速度。
+在點矩陣上顯示初始的貪食蛇和食物位置。  
+設置初始遊戲參數，如蛇的長度、方向和速度。  
 
-3.遊戲主循環：
-讀取輸入： 通過 ADC 和 DMA 讀取 Joystick 的位置，判斷玩家的操作方向。
-更新蛇的位置： 根據玩家的操作更新蛇的方向和位置。
+3.遊戲主循環：  
+讀取輸入： 通過 ADC 和 DMA 讀取 Joystick 的位置，判斷玩家的操作方向。  
+更新蛇的位置： 根據玩家的操作更新蛇的方向和位置。  
 檢查碰撞：
-如果蛇撞到牆壁或自身，遊戲結束。
-如果蛇吃到食物，增加蛇的長度，並隨機生成新的食物。
-更新顯示： 在點矩陣上刷新蛇和食物的位置。
-餵狗： 重置看門狗計時器以防止系統復位。
+如果蛇撞到牆壁或自身，遊戲結束。  
+如果蛇吃到食物，增加蛇的長度，並隨機生成新的食物。  
+更新顯示： 在點矩陣上刷新蛇和食物的位置。  
+餵狗： 重置看門狗計時器以防止系統復位。  
 
 4.遊戲結束：
-在點矩陣上顯示遊戲結束的提示信息。
+在點矩陣上顯示遊戲結束的提示訊息。
 等待玩家的重新啟動操作。
