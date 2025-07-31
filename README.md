@@ -6,14 +6,14 @@
 
 輸入電壓:5V
 VRx及VRy為ADC接腳，可以透過STM32 ADC功能讀取數值。以判斷上下左右。
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/f2e97745-07eb-44cd-a29b-6d636589e96b" />
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/f2e97745-07eb-44cd-a29b-6d636589e96b" />
 
 
 2.Max7219 8*8 點矩陣
 
 輸入電壓:3~5V
 控制腳位:DIN（數據輸入），CS，和 CLK（時鐘）
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/f633d635-5d8b-4b4e-901a-2a903cde3ed4" />
+<img width="80" height="80" alt="image" src="https://github.com/user-attachments/assets/f633d635-5d8b-4b4e-901a-2a903cde3ed4" />
 
 
 3.UART(FT232):
